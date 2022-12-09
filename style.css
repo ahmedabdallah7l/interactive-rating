@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Kumbh+Sans:wght@400;700&family=Outfit:wght@500;600&family=Overpass:wght@500;700&family=Poppins:wght@500&family=Roboto:wght@500&family=Rubik:wght@400;500;700&family=Source+Sans+Pro:wght@600&display=swap');
+:root
+{
+ --body-bg:hsl(216, 12%, 8%);
+ --main-bg-:hsl(213, 19%, 18%);
+ --text-clr:hsl(216, 12%, 54%);
+ --hover:hsl(217, 12%, 63%);
+ --secondary-clr:hsl(0, 0%, 100%);
+ --primary-clr: hsl(25, 97%, 53%);
+ --circle-clr:hsl(216, 12%, 54%, 0.199);
+ --fw-500:500;
+ --fw--700:700;
+
+}
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+ margin: 0;
+}
+
+/* Remove list styles on ul, ol elements, which suggests default styling will be removed */
+ul,
+ol {
+ list-style: none;
+}
+
+/* Set core root defaults */
+html,
+html:focus-within {
+ scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+ min-height: 100vh;
+ text-rendering: optimizeSpeed;
+ line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+ text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+ max-width: 100%;
+ display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+ font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+ html,
+ html:focus-within {
+   scroll-behavior: auto;
+ }
+
+ *,
+ *::before,
+ *::after {
+   animation-duration: 0.01ms !important;
+   animation-iteration-count: 1 !important;
+   transition-duration: 0.01ms !important;
+   scroll-behavior: auto !important;
+ }
+}
+body
+{
+  background-color: var(--body-bg);
+ font-family: "Overpass", sans-serif;
+ font-size: 15px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+
+main
+{
+ width: 25rem;
+padding: 1.5rem;
+border-radius: 10px;
+ background-color: var(--main-bg-);
+ display: flex;
+ flex-direction: column;
+}
+ .img-container
+ {
+    
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:var(--circle-clr);
+  margin-bottom: 1rem;
+ }
+ .img-container>img{
+ width: 100%;
+ padding: 0.8rem;
+ }
+ h2
+ {
+  color:var(--secondary-clr);
+  margin-bottom: 1rem;
+ }
+ p
+ {
+  color: var(--text-clr);
+  margin-bottom: 1rem;
+ }
+ .rating
+ {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 1rem;
+ }
+ 
+ .rate
+ {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--circle-clr);
+  /* text-align: center; */
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+ }
+
+.rate:hover
+{
+ background-color: var(--hover);
+ transition: all 200ms ease-in;
+ cursor: pointer;
+}
+button
+{
+ background-color: var(--primary-clr);
+ color: var(--secondary-clr);
+ padding: 0.5rem;
+ border-radius: 20px;
+ border: none;
+ width: 100%;
+margin-bottom: 0.7rem;
+}
+button:hover
+{
+ background-color: var(--secondary-clr);
+ color: var(--primary-clr);
+ transition: all 200ms ease-in;
+ cursor: pointer;
+}
+.active
+{
+ color: var(--secondary-clr);
+ background-color: var(--primary-clr);
+}
+.active:hover
+{
+ color: var(--secondary-clr);
+ background-color: var(--primary-clr);
+}
+
+.main
+{
+ display: block;
+
+}
+.thank{
+ display: none;
+ text-align: center;
+}
+.thankImage>img
+{
+ text-align: center;
+ margin: auto;
+ margin-bottom: 2rem;
+}
+
+.thankResult 
+{
+ color: var(--primary-clr);
+ padding: 0.5rem;
+ border-radius: 1rem;
+ background-color: var(--circle-clr);
+}
+
+.ps
+{
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
